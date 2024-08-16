@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linet Delicious Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include a library for sliders -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Linet Delicious Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h2>Welcome to Linet Delicious Bakery</h2>
+            <p>Where every bite is a delight!</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+            At Linet Delicious Bakery, we believe in crafting the finest baked goods with love and passion. Our bakery offers a wide range of delicious cakes, pastries, and bread made with the freshest ingredients.
+        </p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-slider">
+            <div class="product-item">
+                <img src="cake.jpg" alt="Cake">
+                <h3>Delicious Cakes</h3>
+                <p>Our cakes are perfect for any occasion, whether it's a birthday, wedding, or just a sweet treat.</p>
+            </div>
+            <div class="product-item">
+                <img src="pastry.jpg" alt="Pastry">
+                <h3>Fresh Pastries</h3>
+                <p>Enjoy our freshly baked pastries that are flaky, buttery, and utterly delicious.</p>
+            </div>
+            <div class="product-item">
+                <img src="bread.jpg" alt="Bread">
+                <h3>Artisan Bread</h3>
+                <p>Our bread is baked daily with the finest ingredients to ensure freshness and flavor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for orders or any inquiries.</p>
+        
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <!-- Embedded Google Map -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31835.294827759687!2d36.81583056884766!3d-1.292065741957922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1726e17f957f%3A0x4046c8b4c6ef70e6!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1682496845943!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Samylan 2024 @linet Delicious Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- Include jQuery and Slick Slider JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.product-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
